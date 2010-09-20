@@ -1,0 +1,7 @@
+set terminal postscript
+set output 'hash.ps'
+set title "Estimated probability of at least one collision occuring"
+set xlabel "Number of entries hashed"
+set ylabel "Estimated probability"
+set autoscale
+plot 'hash.dat' with linespoints
